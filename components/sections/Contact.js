@@ -117,7 +117,7 @@ const Contact = () => {
           p_top="-32px"
           ref={link2}
         >
-          <a href='mailto:fahad.ruet@gmail.com'>
+          <a href='mailto:fahad.ruet@gmail.com' target="_blank">
             <i className="icofont-email">
               <p>Gmail</p>
             </i>
@@ -132,7 +132,7 @@ const Contact = () => {
           p_top="-20px"
           ref={link3}
         >
-          <a href="https://m.me/fahad.pcr">
+          <a href="https://m.me/fahad.pcr" target="_blank">
             <i className="icofont-facebook-messenger">
               <p>fahad.pcr</p>
             </i>

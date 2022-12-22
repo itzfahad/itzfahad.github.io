@@ -15,8 +15,13 @@ export default function Document() {
         {/* For downloading google poppings font */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="image_src" href="/me.jpg" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./icofont/icofont.min.css" />
+
+        <meta name="og:image" content="/me.jpg"></meta>
+        <meta name="twitter:image" content="/me.jpg"></meta>
       </Head>
       <body>
         <Main />
