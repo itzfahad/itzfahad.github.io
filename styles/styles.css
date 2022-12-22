@@ -1,0 +1,38 @@
+/* This file will contain global CSS and it will be injected to '_app.js' via import. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 968px;
+  margin: 0 auto;
+  width: 100%;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Commonly used CSS */
+.flex-row-centered {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
