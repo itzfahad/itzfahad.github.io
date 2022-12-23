@@ -14,7 +14,7 @@
 
 // ============================================================================
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const StyledTimeline = styled.div`
   display: flex;
@@ -23,11 +23,10 @@ const StyledTimeline = styled.div`
   position: relative;
   margin: 2rem;
 
-  /* css for line */
   &::before {
-    content: "";
+    content: '';
     width: 2px;
-    background-color:${props=> props.theme.secondaryColor};
+    background-color: ${props => props.theme.secondaryColor};
     position: absolute;
     top: 0;
     bottom: 0;
@@ -40,13 +39,12 @@ const StyledTimeline = styled.div`
 `;
 
 const Wrapper = styled.div`
-  /* css for circle */
   &::before {
-    content: "";
+    content: '';
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color:${props=> props.theme.secondaryColor};
+    background-color: ${props => props.theme.secondaryColor};
     filter: brightness(1.3);
     position: absolute;
     left: 0%;
@@ -57,13 +55,13 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 2;
-
   position: relative;
+
   &::after {
-    content:"📅${props=> props.timeSpan || ''}";
+    content: '📅${props => props.timeSpan || ''}';
     flex-grow: 2;
     padding: 0 1rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
   }
 

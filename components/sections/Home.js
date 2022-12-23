@@ -1,4 +1,4 @@
-import StyledButton from "@components/ui/button";
+import Button from "@components/ui/button";
 import SocialIcon from "@components/ui/socialIcon";
 import { homeInfo } from "@data/contentInfo";
 import socialInfo from "@data/socialInfo";
@@ -11,7 +11,7 @@ const Section = styled(StyledSection)`
   position: relative;
   flex-direction: row;
   justify-content: space-between;
-  margin-top:1rem;
+  margin-top: 1rem;
   .social {
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@ const HomeData = styled.div`
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: normal;
-    line-height: .4;
+    line-height: 0.4;
     margin-top: 3rem;
   }
   .home__subtitle {
@@ -49,21 +49,21 @@ const HomeData = styled.div`
   }
   .home__description {
     color: ${(props) => props.theme.textColor};
-    font-size:.9rem;
+    font-size: 0.9rem;
     text-align: justify;
   }
   .scrollDown {
     margin-top: 6rem;
     gap: 0.25rem;
-    color:${props=> props.theme.textColor}
+    color: ${(props) => props.theme.textColor};
   }
   @media (max-width: 768px) {
     margin-top: 0;
     .scrollDown {
       display: none;
     }
-    .home__title{
-      margin-top: .5rem;
+    .home__title {
+      margin-top: 0.5rem;
     }
   }
 `;
@@ -105,9 +105,12 @@ const Home = () => {
         <h1 className="home__title">{homeInfo.title}</h1>
         <h3 className="home__subtitle">{homeInfo.subtitle[0]}</h3>
         <p className="home__description">{homeInfo.description}</p>
-        <StyledButton icon={homeInfo.button.icon}>
+        <Button
+          icon={homeInfo.button.icon}
+          onClick={() => (window.location.hash = "#contact")}
+        >
           {homeInfo.button.text}
-        </StyledButton>
+        </Button>
 
         <a
           className="scrollDown flex-row-centered pointer"

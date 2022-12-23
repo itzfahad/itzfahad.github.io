@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 import { useState } from "react";
 
+// StyledHeader is a styled div element with additional styles
+// that apply to the header of the website
 const StyledHeader = styled.div.attrs((props) => ({ navOpen: props.navOpen }))`
   width: 100%;
   position: fixed;
@@ -11,6 +13,13 @@ const StyledHeader = styled.div.attrs((props) => ({ navOpen: props.navOpen }))`
   padding: 1rem;
   z-index: 120;
   background-color: ${(props) => props.theme.secondaryColor};
+  box-shadow: 1px 1px 3px -2px rgb(0 0 0 / 75%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+
+  // styles for elements inside the header
   i {
     display: none;
   }
@@ -20,39 +29,40 @@ const StyledHeader = styled.div.attrs((props) => ({ navOpen: props.navOpen }))`
   .viewController {
     display: none;
   }
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  box-shadow: 1px 1px 3px -2px rgb(0 0 0 / 75%);
+
+  // styles for the header when the screen width is 768px or less
   @media (max-width: 768px) {
-    i {
-      display: block;
-    }
-    flex-direction: row;
     top: initial;
     bottom: 0;
     gap: 1rem;
     padding: initial;
+    border-radius: 0.5rem 0.5rem 0 0;
+    box-shadow: -3px -1px 8px 0px rgb(0 0 0 / 75%);
+    flex-direction: column;
+
+    // show the elements inside the header
+    i {
+      display: block;
+    }
     .viewController {
       display: initial;
     }
-    flex-direction: column;
+
+    // styles for the navController element
     .navController {
       display: flex;
       width: 100%;
       justify-content: space-around;
       align-items: center;
       border-top: 2px solid ${(props) => props.theme.primaryColor};
-      border: ${(props) => (props.navOpen ? "none" : "")};
+      border: ${(props) => (props.navOpen ? 'none' : '')};
       padding: 0.9rem;
+
       i {
         font-size: 1.25rem;
         cursor: pointer;
       }
     }
-    border-radius: 0.5rem 0.5rem 0 0;
-    box-shadow: -3px -1px 8px 0px rgb(0 0 0 / 75%);
   }
 `;
 
@@ -95,6 +105,8 @@ const NavLink = ({ dataArray, changeState, state }) => {
   ));
 };
 
+
+// Header is a functional component that renders the header of the website
 const Header = () => {
   const [navOpen, changeState] = useState(true);
   return (
