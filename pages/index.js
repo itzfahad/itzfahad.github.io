@@ -1,4 +1,5 @@
 import Contact from '@components/sections/Contact';
+import Footer from '@components/sections/Footer';
 import Header from '@components/sections/Header';
 import Home from '@components/sections/Home';
 import Projects from '@components/sections/Projects';
@@ -10,11 +11,11 @@ const Portfolio = () => {
       <Header />
       <main className="main">
         <Home/>
-        {/* <About /> */}
         <Qualification/>
         <Projects/>
         <Contact/>
       </main>
+      <Footer />
     </>
   );
 };

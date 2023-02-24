@@ -1,20 +1,23 @@
 const ProjectSummeryData = [
   
   {
-    title: "Energy Usage Monitoring System",
+    title: "Smart conference table",
     images: [],
     projectID: "",
     projectLink: "",
     description: [
-      "Provides Short circuit Protection to devices",
-      "Sends in Phone and PC over IOT",
-      "Enables device power controll over IOT",
+      "Special conference table equiped with various kinds of interactive motor function along with batch controll system",
+      "Manufractured 15pcs for a reputed education institute of bogra"
     ],
-    time: new Date(2020, 5, 23), // new Date(year,month,day)
+    time: new Date(2021, 2, 23), // new Date(year,month,day)
     colaborator: [],
     tags: [
       {
-        field: "IOT",
+        field: "AVR",
+        icon: "",
+      },
+      {
+        field: "AutoCAD",
         icon: "",
       },
     ],
@@ -45,16 +48,16 @@ const ProjectSummeryData = [
     projectID: "",
     projectLink: "",
     description: [
-      "A PNP device uses SIM module to send data",
+      "Module which uses SIM 800L to send GPRS data",
       "MPU6050 inside to detect every movement",
-      "With GPS gets location and alarms to nearest hospital",
+      "Gets GPS data from neo6 and alarms to nearest hospital",
     ],
     time: new Date("2022-7-16"), // new Date(year,month,day)
     colaborator: [
     ],
     tags: [
       {
-        field: "Health",
+        field: "Safety",
         icon: <i className="icofont-medical-sign"></i>,
       },
     ],
@@ -84,17 +87,16 @@ const ProjectSummeryData = [
       },
     ],
   },{
-    title: "3D scanner",
+    title: "IOT weather station",
     images: [],
     projectID: "",
     projectLink: "",
     description: [
-      "Uses servo motor to get presise rotation while capturing image",
-      "Can scan large object like motorBike, Furnitures",
-      "Dedicated bluetooth app for robust controll",
-      "Made for a renowned advertising company in BD"
+      " A self sustained modular weather station, logs weather information like temparature, humidity and air valocity.",
+      "Stores data to google server",
+      "gives user real time access to weather data"
     ],
-    time: new Date("2021-3-16"), // new Date(year,month,day)
+    time: new Date("2022-1-16"), // new Date(year,month,day)
     colaborator: [
     ],
     tags: [

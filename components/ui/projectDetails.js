@@ -1,6 +1,4 @@
-import UserThumb from "@components/ui/userThumb";
 import { getElapsedTime } from "@lib/utils/calculations";
-import { useState } from "react";
 import styled from "styled-components";
 
 const Project = styled.div`
@@ -54,35 +52,18 @@ const Project = styled.div`
   }
 `;
 
-const ProjectSummery = ({ data }) => {
+const ProjectDetailsModal = ({ data }) => {
   const project = data;
-
-  const [modal,modalController] = useState(false);
   
   return (
     <Project>
-      <p className="project__title" onClick={()=>modalController(!modal)}>{project.title}</p>
+      <p className="project__title">{project.title}</p>
       <div className="project__subTitle__wrapper">
         {project.description.map((subTitle, index) => (
           <div className="project__subTitle" key={index}>
             {subTitle}
           </div>
         ))}
-      </div>
-      <div className="project__partners">
-        {project.colaborator.length > 0 ? "Colaborator" : ""}
-        <div className="profile">
-          {project.colaborator.map((colaborator, index) => (
-            <UserThumb
-              className="profile__image"
-              name={colaborator.name}
-              task={colaborator.task}
-              key={index}
-            >
-              <img src={colaborator.profile} />
-            </UserThumb>
-          ))}
-        </div>
       </div>
       <div className="time__with__tag">
         <p className="time">{getElapsedTime(project.time)}</p>
@@ -95,12 +76,8 @@ const ProjectSummery = ({ data }) => {
           ))}
         </div>
       </div>
-      {/* {
-        // this modal should be able to toggle from the child also
-          modal?<ProjectDetailsModal data={project}></ProjectDetailsModal>:" "
-      } */}
     </Project>
   );
 };
 
-export default ProjectSummery;
+export default ProjectDetailsModal;

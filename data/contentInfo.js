@@ -78,39 +78,40 @@ export const EducationalQualification = [
 
 export const WorkQualification = [
   {
-    institute: "Cliquepack",
+    institute: "Bugfix ltd | Mirpur DOHS",
+    shortName: "",
+    location: "Dhaka 1216",
+    timeSpan: "JUN 2020 - FEB 2021",
+    tag: ["Web Developer"],
+    result: "",
+    remarks: [
+      "Developed web based fitness management system",
+      "API integration and design tasks",
+    ],
+  },
+  {
+    institute: "Cliqpack | Mehedibag, Chittagong",
     shortName: "",
     location: "Chittagong",
-    timeSpan: "Jun 2021 - Nov 2021",
-    tag: ["Mechanical"],
+    timeSpan: "DEC 2019 - MAR 2020",
+    tag: ["Contactual"],
     result: "",
-    remarks: ["Prototyped 8ft large 3D Scanner"],
+    remarks: [
+      "Design and prototyping of 8ft large 3d scanner",
+      "Developed firmware with c++",
+      "Developed an android app to access the scanner wireless",
+    ],
   },
   {
-    institute: "OutdoorBD",
+    institute: "Mektek BD | Boaia, Rajshahi",
     shortName: "",
-    location: "Chittagong",
-    timeSpan: "Jan 2021 - Mar 2021",
-    tag: ["avocational"],
+    location: "Rajshahi",
+    timeSpan: "DEC 2017 - FEB 2019",
+    tag: ["R&D"],
     result: "",
-    remarks: ["Web Developer", "Used React & tailwind"],
-  },
-  {
-    institute: "BugFix",
-    shortName: "",
-    location: "Dhaka",
-    timeSpan: "July 2020 - Nov 2020",
-    tag: ["Developer"],
-    result: "",
-    remarks: ["Web Developer"],
-  },
-  {
-    institute: "Mektek",
-    shortName: "",
-    location: "Rajshahi, Bangladesh",
-    timeSpan: "Jan 2018 - May 2020",
-    tag: ["avocational"],
-    result: "",
-    remarks: ["Embadded system designer", "Worked under 13+ projects"],
-  },
+    remarks: [
+      "Developement of Relay module",
+      "Handled PCB manufracturing system",
+    ],
+  }
 ];
