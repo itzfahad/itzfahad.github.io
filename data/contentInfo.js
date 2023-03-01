@@ -1,6 +1,6 @@
 export const homeInfo = {
   title: "Fahad",
-  subtitle: ["Embadded system developer", "Programmer", "Organizer"],
+  subtitle: ["Embedded system developer", "Programmer", "Organizer"],
   description:
     " I am an embedded systems and software developer with a background in mechanical engineering. On this website, you can find information about my skills and experience, as well as a selection of my projects. Thank you for visiting!",
   button: {
